@@ -20,14 +20,14 @@ Pod::Spec.new do |s|
     # change the source location
     s.source            = { :https => 'https://github.com/hariramc/TestFly' } 
     s.swift_version = '4.0'
-    s.source_files  = "TestFly/**/*.*{swift, h, m}","TestFly/**/*.xib"
+    s.source_files  = "TestFly/**/*.*{FlyCommon.xcframework}","TestFly/**/*.xib"
 
    # s.resources = "TestFly/*.xcassets"
     #spec.exclude_files = [TestFile]
     #s.requires_arc = true
     s.dependency 'libPhoneNumber-iOS'
     s.dependency 'Alamofire'
-   # s.ios.vendored_frameworks = 'FlyCommon.xcframework' 
+    s.ios.vendored_frameworks = 'FlyCommon.xcframework' 
    # s.ios.deployment_target = '10.0'
    # s.ios.vendored_frameworks = 'XCFrameworkTest.xcframework' # Your XCFramework
     
