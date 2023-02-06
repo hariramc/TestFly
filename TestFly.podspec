@@ -34,6 +34,13 @@ s.source_files  = "TestFly/**/*.*{FlyXmpp.xcframework}","TestFly/**/*.xib"
     #s.requires_arc = true
     s.dependency 'libPhoneNumber-iOS'
     s.dependency 'Alamofire'
+
+s.dependency 'SocketRocket'
+    s.dependency 'Socket.IO-Client-Swift'
+
+s.dependency 'XMPPFramework/Swift'
+    s.dependency 'RealmSwift'
+
     s.ios.vendored_frameworks = 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyCore.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
    # s.ios.deployment_target = '10.0'
    # s.ios.vendored_frameworks = 'XCFrameworkTest.xcframework' # Your XCFramework
