@@ -24,16 +24,13 @@ Pod::Spec.new do |s|
 
    
 
+s.dependency 'libPhoneNumber-iOS'
+    s.dependency 'Alamofire'
+    s.dependency 'SocketRocket'
+    s.dependency 'Socket.IO-Client-Swift'
+    s.dependency 'XMPPFramework/Swift'
+    s.dependency 'RealmSwift'
 
-  
-
-
- s.source_files  = "TestFly/**/*.*{FlyCore.xcframework}","TestFly/**/*.xib"
-  s.resources = "TestFly/*.xcassets"
-  s.dependency 'libPhoneNumber-iOS'
-  s.dependency 'Alamofire'
-  s.dependency 'RealmSwift'
-  s.dependency 'XMPPFramework/Swift'
- s.ios.vendored_frameworks = 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
+    s.ios.vendored_frameworks = 'FlyCore.xcframework', 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
     
 end 
