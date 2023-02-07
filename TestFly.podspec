@@ -34,6 +34,6 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire'
   s.dependency 'RealmSwift'
   s.dependency 'XMPPFramework/Swift'
-
+ s.ios.vendored_frameworks = 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
     
 end 
