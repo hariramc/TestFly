@@ -22,27 +22,29 @@ Pod::Spec.new do |s|
     s.swift_version = '4.0'
     s.source_files  = "TestFly/**/*.*{FlyCommon.xcframework}","TestFly/**/*.xib"
     s.source_files  = "TestFly/**/*.*{FlyTranslate.xcframework}","TestFly/**/*.xib"
-s.source_files  = "TestFly/**/*.*{FlyCall.xcframework}","TestFly/**/*.xib"
-s.source_files  = "TestFly/**/*.*{FlyCore.xcframework}","TestFly/**/*.xib"
-s.source_files  = "TestFly/**/*.*{FlyDatabase.xcframework}","TestFly/**/*.xib"
-s.source_files  = "TestFly/**/*.*{FlyNetwork.xcframework}","TestFly/**/*.xib"
-s.source_files  = "TestFly/**/*.*{FlyXmpp.xcframework}","TestFly/**/*.xib"
+    s.source_files  = "TestFly/**/*.*{FlyCall.xcframework}","TestFly/**/*.xib"
+    s.source_files  = "TestFly/**/*.*{FlyCore.xcframework}","TestFly/**/*.xib"
+    s.source_files  = "TestFly/**/*.*{FlyDatabase.xcframework}","TestFly/**/*.xib"
+    s.source_files  = "TestFly/**/*.*{FlyNetwork.xcframework}","TestFly/**/*.xib"
+    s.source_files  = "TestFly/**/*.*{FlyXmpp.xcframework}","TestFly/**/*.xib"
 
 
    # s.resources = "TestFly/*.xcassets"
     #spec.exclude_files = [TestFile]
     #s.requires_arc = true
+
     s.dependency 'libPhoneNumber-iOS'
     s.dependency 'Alamofire'
-
-s.dependency 'SocketRocket'
+    s.dependency 'SocketRocket'
     s.dependency 'Socket.IO-Client-Swift'
-
-s.dependency 'XMPPFramework/Swift'
+    s.dependency 'XMPPFramework/Swift'
     s.dependency 'RealmSwift'
 
-    s.ios.vendored_frameworks = 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyCore.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
-   # s.ios.deployment_target = '10.0'
+    s.ios.vendored_frameworks = 'FlyCore.xcframework'
+    
+    s.ios.frameworks = ['FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework']    
+
+    s.ios.deployment_target = '10.0'
    # s.ios.vendored_frameworks = 'XCFrameworkTest.xcframework' # Your XCFramework
     
 end 
