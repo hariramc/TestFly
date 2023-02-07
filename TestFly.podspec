@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
 
 
- s.source_files  = "FlyCore/**/*.*{swift, h, m, FlyCore.xcframework}","FlyCore/**/*.xib"
+ s.source_files  = "FlyCore/**/*.*{FlyCore.xcframework}","FlyCore/**/*.xib"
 #  s.resources = "TestFly/*.xcassets"
   s.dependency 'libPhoneNumber-iOS'
   s.dependency 'Alamofire'
