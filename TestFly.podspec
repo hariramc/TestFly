@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
 
     s.platform          = :ios, "12.1"
     # change the source location
-    s.source            = { :https => 'https://github.com/hariramc/TestFly' } 
+    s.source            = { :https => 'https://github.com/hariramc/TestFly/archive/refs/tags/0.01.zip' } 
     s.swift_version = '4.0'
-
+    s.requires_arc = true
 
    
 
@@ -31,6 +31,6 @@ s.dependency 'libPhoneNumber-iOS'
     s.dependency 'XMPPFramework/Swift'
     s.dependency 'RealmSwift'
 
-    s.ios.vendored_frameworks = 'FlyCore.xcframework', 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
+    s.ios.vendored_frameworks = 'FlyCore.xcframework'
     
 end 
