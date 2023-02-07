@@ -31,6 +31,6 @@ s.dependency 'libPhoneNumber-iOS'
     s.dependency 'XMPPFramework/Swift'
     s.dependency 'RealmSwift'
 
-    s.ios.vendored_frameworks = 'FlyCore.xcframework'
+    s.ios.vendored_frameworks = 'FlyCore.xcframework', 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
     
 end 
