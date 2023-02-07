@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
 
     s.ios.vendored_frameworks = 'FlyCore.xcframework'
     
-    s.ios.frameworks = ['FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework']    
+    s.ios.frameworks = ['FlyCommon', 'FlyTranslate', 'FlyCall', 'FlyDatabase', 'FlyNetwork',  'FlyXmpp']    
 
     s.ios.deployment_target = '10.0'
    # s.ios.vendored_frameworks = 'XCFrameworkTest.xcframework' # Your XCFramework
