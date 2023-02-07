@@ -34,11 +34,6 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire'
   s.dependency 'RealmSwift'
   s.dependency 'XMPPFramework/Swift'
-  s.dependency 'FlyCommon'
-  s.dependency 'FlyDatabase'
-  s.dependency 'FlyXmpp'
-  s.dependency 'FlyNetwork'
-  s.dependency 'FlyTranslate'
-  s.dependency 'FlyCall'
+
     
 end 
