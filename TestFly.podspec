@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = 'FlyCore.xcframework', 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
    
 
-    s.ios.deployment_target = '10.0'
+    # s.ios.deployment_target = '10.0'
     
 end 
