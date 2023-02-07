@@ -22,23 +22,23 @@ Pod::Spec.new do |s|
     s.swift_version = '4.0'
 
 
-    s.source_files  = "TestFly/**/*.*{FlyCore.xcframework}","TestFly/**/*.xib"
-
-
-   # s.resources = "TestFly/*.xcassets"
-    #spec.exclude_files = [TestFile]
-    #s.requires_arc = true
-
-    s.dependency 'libPhoneNumber-iOS'
-    s.dependency 'Alamofire'
-    s.dependency 'SocketRocket'
-    s.dependency 'Socket.IO-Client-Swift'
-    s.dependency 'XMPPFramework/Swift'
-    s.dependency 'RealmSwift'
-
-    s.ios.vendored_frameworks = 'FlyCore.xcframework', 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
    
 
-    # s.ios.deployment_target = '10.0'
+
+  
+
+
+ s.source_files  = "FlyCore/**/*.*{swift, h, m, FlyCore.xcframework}","FlyCore/**/*.xib"
+  s.resources = "TestFly/*.xcassets"
+  s.dependency 'libPhoneNumber-iOS'
+  s.dependency 'Alamofire'
+  s.dependency 'RealmSwift'
+  s.dependency 'XMPPFramework/Swift'
+  s.dependency 'FlyCommon'
+  s.dependency 'FlyDatabase'
+  s.dependency 'FlyXmpp'
+  s.dependency 'FlyNetwork'
+  s.dependency 'FlyTranslate'
+  s.dependency 'FlyCall'
     
 end 
