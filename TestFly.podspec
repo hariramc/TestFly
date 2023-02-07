@@ -20,13 +20,9 @@ Pod::Spec.new do |s|
     # change the source location
     s.source            = { :https => 'https://github.com/hariramc/TestFly' } 
     s.swift_version = '4.0'
-    s.source_files  = "TestFly/**/*.*{FlyCommon.xcframework}","TestFly/**/*.xib"
-    s.source_files  = "TestFly/**/*.*{FlyTranslate.xcframework}","TestFly/**/*.xib"
-    s.source_files  = "TestFly/**/*.*{FlyCall.xcframework}","TestFly/**/*.xib"
+
+
     s.source_files  = "TestFly/**/*.*{FlyCore.xcframework}","TestFly/**/*.xib"
-    s.source_files  = "TestFly/**/*.*{FlyDatabase.xcframework}","TestFly/**/*.xib"
-    s.source_files  = "TestFly/**/*.*{FlyNetwork.xcframework}","TestFly/**/*.xib"
-    s.source_files  = "TestFly/**/*.*{FlyXmpp.xcframework}","TestFly/**/*.xib"
 
 
    # s.resources = "TestFly/*.xcassets"
