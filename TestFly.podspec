@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
     s.platform          = :ios, "12.1"
     # change the source location
     s.source            = { :https => 'https://github.com/hariramc/TestFly' } 
+  s.source_files  = "TestFly/**/*.*{xcframework}","TestFly/**/*.xib"
+
     s.swift_version = '4.0'
     s.requires_arc = true
-
-   
 
 s.dependency 'libPhoneNumber-iOS'
     s.dependency 'Alamofire'
