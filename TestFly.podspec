@@ -29,6 +29,7 @@ s.dependency 'libPhoneNumber-iOS'
     s.dependency 'Socket.IO-Client-Swift'
     s.dependency 'XMPPFramework/Swift'
     s.dependency 'RealmSwift'
+s.dependency 'GoogleWebRTC'
 
     s.ios.vendored_frameworks = 'FlyCore.xcframework', 'FlyCommon.xcframework', 'FlyTranslate.xcframework', 'FlyCall.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework',  'FlyXmpp.xcframework'
     
