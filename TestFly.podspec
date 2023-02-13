@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|  
     s.name              = 'TestFly' # Name for your pod
-    s.version           = '0.0.2'
+    s.version           = '0.0.3'
     s.summary           = 'This repo to explore the cocopod and how to upload pod in public accessc'
     s.homepage          = 'https://github.com/'
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 s.dependency 'libPhoneNumber-iOS'
     s.dependency 'Alamofire'
     s.dependency 'SocketRocket'
-    s.dependency 'Socket.IO-Client-Swift'
+    s.dependency 'Socket.IO-Client-Swift', '15.2.0'
     s.dependency 'XMPPFramework/Swift'
     s.dependency 'RealmSwift'
 s.dependency 'GoogleWebRTC'
