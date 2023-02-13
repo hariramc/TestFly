@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
     s.dependency 'libPhoneNumber-iOS', '0.8'
-    s.dependency 'Alamofire', '5.3'
+    s.dependency 'Alamofire'
     s.dependency 'SocketRocket'
     s.dependency 'Socket.IO-Client-Swift', '15.2.0'
     s.dependency 'XMPPFramework/Swift'
