@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|  
     s.name              = 'TestFly' # Name for your pod
-    s.version           = '0.0.5'
+    s.version           = '0.0.6'
     s.summary           = 'This repo to explore the cocopod and how to upload pod in public accessc'
     s.homepage          = 'https://github.com/'
 
@@ -27,10 +27,11 @@ Pod::Spec.new do |s|
     s.dependency 'Alamofire', '5.3'
     s.dependency 'SocketRocket'
     s.dependency 'Socket.IO-Client-Swift', '15.2.0'
-    #s.dependency 'XMPPFramework/Swift'
+    s.dependency 'XMPPFramework/Swift'
     s.dependency 'RealmSwift' , '10.20.1'
     s.dependency 'GoogleWebRTC'
-    s.ios.vendored_frameworks = 'FlyCommon.xcframework' , 'FlyCall.xcframework'
+
+    s.ios.vendored_frameworks = 'FlyCommon.xcframework' , 'FlyCall.xcframework' ,'FlyCore.xcframework', 'FlyXmpp.xcframework', 'FlyDatabase.xcframework', 'FlyNetwork.xcframework', 'FlyTranslate.xcframework'
 
     
 end 
